@@ -4,3 +4,13 @@
 # Для этого Петя делает две подсказки. Он называет сумму этих чисел S и их
 # произведение P. Помогите Кате отгадать задуманные Петей числа.
 
+s = int(input())
+p = int(input())
+num1 = 1
+
+while num1 < p:
+    num2 = s - num1
+    if s == num1 + num2 and p == num2 * num1:
+        print(num1, num2)
+        break
+    num1 += 1
